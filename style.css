@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg-clr-1: #353333;
+  --bg-clr-2: #35363a;
+  --bg-clr-3: #f1f5f8;
+  --bg-clr-4: #1a1a1d;
+  --bg-clr-5: #fccc47;
+  --bg-clr-6: #ee5743;
+  --bg-clr-7: hsl(210, 50%, 14%);
+  --shadow-cyan-1: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px cyan;
+  --shadow-cyan-2: 0 0 5px #fff, 0 0 10px cyan, 0 0 20px cyan;
+  --shadow-cyan-3: 0 0 20px cyan, 0 0 30px cyan;
+  --shadow-red-1: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red;
+  --shadow-red-2: 0 0 20px red, 0 0 30px red;
+}
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg-clr-3);
+}
+ul {
+  list-style-type: none;
+}
+.the-title {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+.the-title a {
+  color: white;
+}
+nav {
+  background: var(--bg-clr-1);
+  cursor: default;
+  padding: 4rem 2rem 4.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navtext {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+.pages {
+  margin-top: 0.8rem;
+  margin-right: 2rem;
+}
+.pages a {
+  color: white;
+}
+.pages a:hover {
+  color: white;
+  text-shadow: var(--shadow-red-1);
+}
+.pages li {
+  color: white;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 1.1rem;
+  float: left;
+  margin-right: 20px;
+}
+.viewmore {
+  font-size: 1.1rem;
+  background: transparent;
+  border-color: transparent;
+  color: white;
+}
+.viewmore:hover {
+  text-shadow: var(--shadow-red-1);
+}
+.close {
+  font-size: 1.1rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 30px 0;
+}
+.close:hover {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.sidebar {
+  background: var(--bg-clr-3);
+  box-shadow: 0 0 7px black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  width: 25rem;
+  height: 100%;
+  transition: all 0.3s linear;
+  transform: translate(105%);
+}
+.show-sidebar {
+  transform: translate(0);
+}
+.social-media {
+  margin-top: 3rem;
+  justify-self: center;
+}
+.social-media li {
+  float: left;
+  margin: 0 0.7rem;
+}
+.social-media a {
+  font-size: 1.5rem;
+  color: black;
+}
+.fb:hover {
+  color: #3b5998;
+}
+.twitter:hover {
+  color: #00acee;
+}
+.insta:hover {
+  color: red;
+}
+.blog:hover {
+  color: #fc4f08;
+}
+.sidebar-pages {
+  font-family: Playfair;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  display: block;
+  height: 35rem;
+  margin-top: 1.5rem;
+}
+.sidebar-pages li {
+  padding: 1rem 1.5rem;
+}
+.sidebar-pages a {
+  color: black;
+}
+.sidebar-pages li:hover {
+  font-size: 1.5rem;
+  background: #ebebeb;
+}
+
+.panel-pages {
+  width: 90vw;
+  margin-left: 4rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.panel {
+  background: #fff;
+  box-shadow: 0 0 3px white, 0 0 8px #353333;
+  width: 18rem;
+  height: 28rem;
+  color: black;
+  padding: 1rem 2rem;
+  font-family: Playfair Display;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.panel:hover {
+  box-shadow: 0 0 30px red, 0 0 20px red;
+  /* box-shadow: 0 0 20px cyan, 0 0 30px cyan; */
+  background: var(--bg-clr-1);
+  color: white;
+}
