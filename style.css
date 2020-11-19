@@ -181,4 +181,5 @@ a {
   /* box-shadow: 0 0 20px cyan, 0 0 30px cyan; */
   background: var(--bg-clr-1);
   color: white;
+  cursor: pointer;
 }
