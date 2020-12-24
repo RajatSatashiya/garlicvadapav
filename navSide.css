@@ -16,7 +16,6 @@
   --shadow-red-1: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px red, 0 0 30px red;
   --shadow-red-2: 0 0 20px red, 0 0 30px red;
 }
-
 *,
 ::after,
 ::before {
@@ -30,9 +29,21 @@ body {
 ul {
   list-style-type: none;
 }
+nav {
+  background: var(--bg-clr-1);
+  cursor: default;
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navtext {
+  display: flex;
+  justify-content: space-between;
+}
 .the-title {
   font-family: Montserrat;
-  font-size: 2.5rem;
+  font-size: 1.9rem;
   font-weight: 500;
   color: white;
   cursor: pointer;
@@ -40,22 +51,11 @@ ul {
 .the-title a {
   color: white;
 }
-nav {
-  background: var(--bg-clr-1);
-  cursor: default;
-  padding: 4rem 2rem 4.2rem 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-.navtext {
-  display: flex;
-  justify-content: space-between;
-}
 a {
   text-decoration: none;
 }
 .pages {
-  margin-top: 0.8rem;
+  /* margin-top: 0.8rem; */
   margin-right: 2rem;
 }
 .pages a {
@@ -150,35 +150,4 @@ a {
 .sidebar-pages li:hover {
   font-size: 1.5rem;
   background: #ebebeb;
-}
-.panel-pages {
-  width: 90vw;
-  margin-left: 4rem;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  padding: 3rem;
-}
-.panel {
-  background: #fff;
-  box-shadow: 0 0 3px white, 0 0 8px #353333;
-  width: 18rem;
-  height: 28rem;
-  color: black;
-  padding: 1rem 2rem;
-  font-family: Playfair Display;
-  border-radius: 0.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-.panel:hover {
-  box-shadow: 0 0 30px red, 0 0 20px red;
-  /* box-shadow: 0 0 20px cyan, 0 0 30px cyan; */
-  background: var(--bg-clr-1);
-  color: white;
-  cursor: pointer;
 }
