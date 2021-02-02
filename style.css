@@ -82,6 +82,9 @@ a {
 .viewmore:hover {
   text-shadow: var(--shadow-red-1);
 }
+.viewmore:focus {
+  outline: none;
+}
 .close {
   font-size: 1.1rem;
   background: transparent;
