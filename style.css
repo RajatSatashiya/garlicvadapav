@@ -92,6 +92,9 @@ a {
   font-size: 1.3rem;
   cursor: pointer;
 }
+.close:focus {
+  outline: none;
+}
 .sidebar {
   background: var(--bg-clr-3);
   box-shadow: 0 0 7px black;

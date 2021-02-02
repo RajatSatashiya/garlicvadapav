@@ -22,7 +22,6 @@
 }
 .project-item:hover {
   box-shadow: 0 0 10px red, 0 0 10px red;
-  
 }
 .project-item a {
   color: white;
