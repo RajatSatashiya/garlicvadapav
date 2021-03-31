@@ -1,7 +1,7 @@
 
-# VIT RECRUITERS
+# Welcome Visitor
 
-Hey Recruiters here is the link to see the working model of the code:
+Hey viewers here is the link to see the working model of the code:
 [Garlic Vadapav](https://rajatsatashiya.github.io/garlicvadapav/)
 
 Some other projects to view:
